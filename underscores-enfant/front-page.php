@@ -27,14 +27,14 @@ get_header();
         endwhile; // End of the loop.*/
         
         //Nom de la question
-        echo '<h1>Question 1</h4>';
+        echo '<h1>Question 2</h4>';
 
         // The Query
         $args = array(
             "category_name" => "cours",
-            "posts_per_page" => 10,
+            "posts_per_page" => 29,
             "orderby" => "title",
-            "order" => "DESC"
+            "order" => "ASC"
         );
         $query1 = new WP_Query( $args );
 
