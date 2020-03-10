@@ -87,19 +87,49 @@ body {
   display: none;
 }
 
+.site-info {
+  margin-top: 2%;
+}
+
 .tableau-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+  color: white;
 }
 
 .tableau-grid * {
   border: 2px solid black;
   text-align: center;
   height: 100%;
+}
+
+.headerGrid {
+  color: black;
+  background-color: grey;
+}
+
+.Rangee1 {
+  background-color: #622626;
+}
+
+.Rangee2 {
+  background-color: #863535;
+}
+
+.Rangee3 {
+  background-color: #ab4343;
+}
+
+.Rangee4 {
+  background-color: #c16060;
+}
+
+.Rangee5 {
+  background-color: #cf8585;
 }
 
 .couleurSession {

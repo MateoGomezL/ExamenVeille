@@ -13,17 +13,40 @@ body{
 .entry-footer{
 	display: none;
 }
+.site-info{
+	margin-top: 2%;
+}
 
 .tableau-grid{
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	color: white;
 	*{
 		border: 2px solid black;
 		text-align: center;
 		height: 100%;
 	}
 	
+}
+.headerGrid{
+	color: black;
+	background-color: grey;
+}
+.Rangee1{
+	background-color: lighten($couleur_lienFocus,10%);	
+}
+.Rangee2{
+	background-color: lighten($couleur_lienFocus,20%);	
+}
+.Rangee3{
+	background-color: lighten($couleur_lienFocus,30%);	
+}
+.Rangee4{
+	background-color: lighten($couleur_lienFocus,40%);	
+}
+.Rangee5{
+	background-color: lighten($couleur_lienFocus,50%);	
 }
 
 .couleurSession{
