@@ -22,7 +22,7 @@ get_header();
         echo '<ul class=menuCours><li><a href=category/cours>Cours</a></li><li><a href=#>Ateliers</a></li><li><a href=#>Évènements</a></li><li><a href=#>Nouvelles</a></li></ul>';
         
         //Nom de la question
-        echo '<h1>Question 3</h4>';
+        echo '<h1>Question 4</h4>';
 
         // The Query
         $args = array(

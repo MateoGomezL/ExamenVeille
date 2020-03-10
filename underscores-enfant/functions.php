@@ -11,3 +11,14 @@ function wpm_add_google_fonts() {
     }
      
     add_action( 'wp_enqueue_scripts', 'wpm_add_google_fonts' );
+
+function extraire_cours( $query ) {
+ 
+   if (!is_home() && $query->is_category('cours'))
+   {
+      $query->set( 'posts_per_page', -1 );
+      $query->set( 'orderby', 'date' );
+      $query->set( 'order', 'asc' );
+   }
+}
+add_action( 'pre_get_posts', 'extraire_cours' );

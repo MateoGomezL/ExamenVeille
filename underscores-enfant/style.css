@@ -87,6 +87,21 @@ body {
   display: none;
 }
 
+.tableau-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+}
+
+.tableau-grid * {
+  border: 2px solid black;
+  text-align: center;
+  height: 100%;
+}
+
 .couleurSession {
   color: red;
 }
