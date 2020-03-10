@@ -1,0 +1,18 @@
+.menuCours{
+    padding-left: 0;
+    margin-left: 0;
+    li{
+        margin-left: 1%;
+        display: inline;
+        text-decoration: none;
+    }
+    li a:hover{
+        color: $couleur_lienHover;
+    }
+    li a:focus{
+        color: $couleur_lienFocus;
+    }
+    li a:active{
+        color: $couleur_lienActive;
+    }
+}

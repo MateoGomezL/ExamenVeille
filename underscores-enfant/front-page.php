@@ -19,15 +19,10 @@ get_header();
 		<main id="main" class="site-main">
 
 		<?php
-		/*while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-        endwhile; // End of the loop.*/
+        echo '<ul class=menuCours><li><a href=category/cours>Cours</a></li><li><a href=#>Ateliers</a></li><li><a href=#>Évènements</a></li><li><a href=#>Nouvelles</a></li></ul>';
         
         //Nom de la question
-        echo '<h1>Question 2</h4>';
+        echo '<h1>Question 3</h4>';
 
         // The Query
         $args = array(
@@ -39,9 +34,17 @@ get_header();
         $query1 = new WP_Query( $args );
 
         // The Loop
+        $idCours = 1;
         while ( $query1->have_posts() ) {
             $query1->the_post();
-            echo '<h4>' . get_the_title() . '</h4>';
+            $sessionCours = substr(get_the_title(), 4, 1);
+            $domaineCours = substr(get_the_title(), 5, 1);
+
+            //echo '<h4>'.$idCours .". " .get_the_title() .' - session: ' .$sessionCours .' - domaine: ' .$domaineCours .'</h4>';
+
+            echo '<h4>'.$idCours .". " .'<a href=' .get_post_permalink() .'>' .get_the_title() .'</a>' .'<span class="couleurSession">' .' - session: ' .$sessionCours .'</span>' .'<span class="couleurdomaine">' .' - domaine: ' .$domaineCours .'</span>' .'</h4>';
+
+            $idCours++;
         }
         
         /* Restore original Post Data 

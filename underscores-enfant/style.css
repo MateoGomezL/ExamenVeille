@@ -65,11 +65,18 @@
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## variables
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: aliceblue;
+}
+
+#main {
+  margin-left: 2%;
 }
 
 .site-header {
@@ -80,89 +87,38 @@ body {
   display: none;
 }
 
-.entry-title {
-  text-align: center;
+.couleurSession {
+  color: red;
 }
 
-.globalConteneur {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-left: 2%;
-  margin-top: 2%;
+.couleurdomaine {
+  color: blue;
 }
 
-.globalConteneur div {
-  margin-left: 2%;
+/*--------------------------------------------------------------
+## menu
+--------------------------------------------------------------*/
+.menuCours {
+  padding-left: 0;
+  margin-left: 0;
 }
 
-.globalConteneur img {
-  width: 200px;
-  height: 200px;
-  min-width: 200px;
-  min-height: 200px;
+.menuCours li {
+  margin-left: 1%;
+  display: inline;
+  text-decoration: none;
 }
 
-.ConteneurNouvelles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.menuCours li a:hover {
+  color: #dd2222;
 }
 
-.ConteneurNouvelles img {
-  width: 100px;
-  height: 100px;
-  min-width: 100px;
-  min-height: 100px;
+.menuCours li a:focus {
+  color: #3d1818;
 }
 
-.tableau-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: (1fr)[31];
-      grid-template-rows: repeat(31, 1fr);
-}
-
-.post-thumbnail {
-  text-align: center;
-}
-
-.wp-block-cgb-block-my-block {
-  background-color: #7c4c9c;
-  color: white;
-}
-
-.sticky {
-  display: block;
-}
-
-.post,
-.page {
-  margin: 0 0 1.5em;
-}
-
-.updated:not(.published) {
-  display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
-}
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em;
+.menuCours li a:active {
+  color: #4677ff;
 }
 
 /*--------------------------------------------------------------
